@@ -5,28 +5,28 @@ import 'package:roman_numerals/roman_numerals.dart';
 
 main(){
   test('Convert decimal to roman notation', (){
-    expect(RomanNumerals.to_roman(55),   'LV');
-    expect(RomanNumerals.to_roman(2731), 'MMDCCXXXI');
-    expect(RomanNumerals.to_roman(1354), 'MCCCLIV');
-    expect(RomanNumerals.to_roman(2738), 'MMDCCXXXVIII');
-    expect(RomanNumerals.to_roman(1135), 'MCXXXV');
-    expect(RomanNumerals.to_roman(1320), 'MCCCXX');
+    expect(RomanNumerals.toRoman(55),   'LV');
+    expect(RomanNumerals.toRoman(2731), 'MMDCCXXXI');
+    expect(RomanNumerals.toRoman(1354), 'MCCCLIV');
+    expect(RomanNumerals.toRoman(2738), 'MMDCCXXXVIII');
+    expect(RomanNumerals.toRoman(1135), 'MCXXXV');
+    expect(RomanNumerals.toRoman(1320), 'MCCCXX');
   });
   
   test('Convert roman notation to decimal', (){
-    expect(RomanNumerals.to_decimal('MCMXIX'),     1919);
-    expect(RomanNumerals.to_decimal('MMCCII'),     2202);
-    expect(RomanNumerals.to_decimal('MMDCCLXII'),  2762);
-    expect(RomanNumerals.to_decimal('MDCCCXXXIX'), 1839);
-    expect(RomanNumerals.to_decimal('MCCLXXX'),    1280); 
+    expect(RomanNumerals.toDecimal('MCMXIX'),     1919);
+    expect(RomanNumerals.toDecimal('MMCCII'),     2202);
+    expect(RomanNumerals.toDecimal('MMDCCLXII'),  2762);
+    expect(RomanNumerals.toDecimal('MDCCCXXXIX'), 1839);
+    expect(RomanNumerals.toDecimal('MCCLXXX'),    1280); 
   });
   
   test('Detect if valid roman notation', (){
-    expect(RomanNumerals.check_if_valid('XXXX'),       false);
-    expect(RomanNumerals.check_if_valid('VIIII'),      false);
-    expect(RomanNumerals.check_if_valid('XXAI'),       false);
-    expect(RomanNumerals.check_if_valid('MDCCCXXXIX'), true);
-    expect(RomanNumerals.check_if_valid('MII'),        true);
-    expect(RomanNumerals.check_if_valid('MMDCCXXIX'),  true);
+    expect(RomanNumerals.checkIfValid('XXXX'),       false);
+    expect(RomanNumerals.checkIfValid('VIIII'),      false);
+    expect(RomanNumerals.checkIfValid('XXAI'),       false);
+    expect(RomanNumerals.checkIfValid('MDCCCXXXIX'), true);
+    expect(RomanNumerals.checkIfValid('MII'),        true);
+    expect(RomanNumerals.checkIfValid('MMDCCXXIX'),  true);
   });
 }

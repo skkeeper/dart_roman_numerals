@@ -1,5 +1,6 @@
 library roman_numerals;
 
+// Implementation heavily inspired by: 
 // https://github.com/AndrewVos/roman-numerals/blob/master/lib/roman-numerals.rb
 class RomanNumerals{
 
@@ -23,10 +24,10 @@ class RomanNumerals{
    * Converts a given integer to a String representing roman notation.
    * 
    * Example: 
-   *     RomanNumerals.to_roman(13) => returns XIII
+   *     RomanNumerals.toRoman(13) => returns XIII
    */
-  static String to_roman(int decimal) {
-    if(!_check_decimal(decimal))
+  static String toRoman(int decimal) {
+    if(!_checkDecimal(decimal))
     {
       throw 'Roman numerals are limited to the inclusive range of 1 to 3999.';
     }
@@ -45,9 +46,9 @@ class RomanNumerals{
    * Converts a valid string with roman notation to an int.
    * 
    * Example: 
-   *     RomanNumerals.to_decimal("XLII") => returns 42
+   *     RomanNumerals.toDecimal("XLII") => returns 42
    */
-  static int to_decimal(String roman)
+  static int toDecimal(String roman)
   {
     roman      = roman.toUpperCase();
     int result = 0;
@@ -66,10 +67,10 @@ class RomanNumerals{
    * Checks if the given string represents valid roman notation
    * 
    * Examples: 
-   *     RomanNumerals.check_if_valid("XXXX") => returns false
-   *     RomanNumerals.check_if_valid("XL")   => returns true
+   *     RomanNumerals.checkIfValid("XXXX") => returns false
+   *     RomanNumerals.checkIfValid("XL")   => returns true
    */
-  static bool check_if_valid(String roman) {
+  static bool checkIfValid(String roman) {
     bool isValid = true;
 
     for(var i = 0; i < roman.length; i++)
@@ -92,7 +93,7 @@ class RomanNumerals{
   /**
    * Private method to check the limits of simple roman notation
    */
-  static bool _check_decimal(int n) {
+  static bool _checkDecimal(int n) {
     if(n > 0 && n < 3999)
     {
       return true;

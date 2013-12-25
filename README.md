@@ -18,11 +18,15 @@ Then run the [Pub Package Manager](http://pub.dartlang.org/doc) in Dart Editor (
 
     import 'package:roman_numerals/roman_numerals.dart';
     
-    RomanNumerals.to_decimal("XLII"); => returns 42
+    RomanNumerals.toDecimal("XLII"); => returns 42
     
-    RomanNumerals.to_roman(13); => returns XIII
+    RomanNumerals.toRoman(13); => returns XIII
     
-    RomanNumerals.check_if_valid("XXXX"); => returns false
+    RomanNumerals.checkIfValid("XXXX"); => returns false
+    
+ ## Changelog
+ 
+   + 1.0.2 - the code style is now closer to Dart's.
 
 
 
