@@ -1,5 +1,5 @@
 name: roman_numerals
-version: 1.0.1
+version: 1.0.2
 homepage: https://github.com/skkeeper/dart_roman_numerals
 description: >
   Converts integer decimal numbers to roman numerals and vice versa. Also includes a function to check if a string represents a valid roman number.
