@@ -1,4 +1,5 @@
 #RomanNumerals
+[![Build Status](https://drone.io/github.com/skkeeper/dart_roman_numerals/status.png)](https://drone.io/github.com/skkeeper/dart_roman_numerals/latest)
 
 RomanNumerals takes care of simple roman notation conversion for you. All in the glory of the Dart Language.
 
